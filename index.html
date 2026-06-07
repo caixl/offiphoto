@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Official Photo Maker — Support</title>
+  <style>
+    :root {
+      --blue: #007AFF;
+      --text: #1c1c1e;
+      --sub: #6e6e73;
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --border: #e0e0e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f5f5f7;
+        --sub: #a1a1a6;
+        --bg: #000000;
+        --card: #1c1c1e;
+        --border: #38383a;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .app-icon {
+      width: 80px; height: 80px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #007AFF 0%, #34C759 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(0,122,255,.25);
+    }
+    header h1 { font-size: 1.6rem; font-weight: 700; }
+    header p { color: var(--sub); margin-top: 6px; font-size: .95rem; }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    section { margin-bottom: 48px; }
+    h2 {
+      font-size: 1.1rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: .06em;
+      color: var(--sub); margin-bottom: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .faq-item {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item strong { display: block; margin-bottom: 6px; font-size: .95rem; }
+    .faq-item p { color: var(--sub); font-size: .9rem; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .feature-card .icon { font-size: 1.8rem; margin-bottom: 8px; }
+    .feature-card strong { display: block; margin-bottom: 4px; font-size: .9rem; }
+    .feature-card span { color: var(--sub); font-size: .82rem; }
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 20px;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .contact-card p { color: var(--sub); font-size: .9rem; }
+    .contact-card a {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 980px;
+      font-size: .9rem;
+      font-weight: 600;
+      width: fit-content;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--sub);
+      font-size: .8rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--blue); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-icon">📷</div>
+  <h1>Official Photo Maker</h1>
+  <p>ID &amp; Passport Photos · 100% On-Device · iOS 17+</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">🌏</div>
+        <strong>80+ Standards</strong>
+        <span>Passport, ID card, and visa specs for 70+ countries</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔒</div>
+        <strong>100% On-Device</strong>
+        <span>Photos never leave your iPhone — no cloud, no account</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">✂️</div>
+        <strong>Smart Crop</strong>
+        <span>Face-aware crop with exact head-height ratios at 300 DPI</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🖨️</div>
+        <strong>Print Sheet ✦</strong>
+        <span>Multi-photo layout on 3R / 4R / 5R / A4 paper</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📐</div>
+        <strong>Custom Size ✦</strong>
+        <span>Any width × height in mm with interactive framing</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🪄</div>
+        <strong>Background Removal</strong>
+        <span>White, light blue, grey, or transparent — no subscription</span>
+      </div>
+    </div>
+    <p style="margin-top:10px;font-size:.8rem;color:var(--sub);">✦ Premium feature — one-time in-app purchase</p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <div class="card">
+      <div class="faq-item">
+        <strong>Does the app send my photos to the internet?</strong>
+        <p>No. All processing — background removal, face detection, cropping — happens entirely on your iPhone using Apple's on-device Vision and Core Image frameworks. Your photos never leave your device.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Why wasn't my face detected?</strong>
+        <p>Make sure the photo is well-lit, taken straight on, and that your full face is clearly visible. Glasses, hats, or heavy shadows can reduce detection accuracy. If detection fails, the app uses an upper-center crop as a fallback.</p>
+      </div>
+      <div class="faq-item">
+        <strong>The background colour doesn't look right — how do I change it?</strong>
+        <p>On the photo editor screen, tap the background colour selector (white / light blue / grey) before taking or importing your photo. You can also tap "Reprocess" after switching colours.</p>
+      </div>
+      <div class="faq-item">
+        <strong>How do I adjust the crop position?</strong>
+        <p>After processing, tap "Adjust Frame". This opens a full-screen view of your original photo where you can pinch to zoom and drag to reposition before applying the crop. (Available in Custom Size — Premium feature.)</p>
+      </div>
+      <div class="faq-item">
+        <strong>I purchased Premium but it's locked again after reinstalling</strong>
+        <p>Tap "Restore Purchase" on the paywall screen. Your purchase is stored by Apple and can be restored for free at any time on any device signed in with the same Apple ID.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Which paper sizes does the Print Sheet support?</strong>
+        <p>3R (3.5×5 in), 4R (4×6 in), 5R (5×7 in), and A4. Each size includes printer-safe margins so your photos won't be clipped.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Can I use the app for official government submissions?</strong>
+        <p>Official Photo Maker uses publicly documented photo specifications for each country's documents. Always verify the current requirements on the issuing authority's official website before submitting, as specifications may change.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Which languages is the app available in?</strong>
+        <p>English, 简体中文 (Simplified Chinese), 繁體中文 (Traditional Chinese), 日本語 (Japanese), and 한국어 (Korean). You can change the app language from the Home screen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact &amp; Support</h2>
+    <div class="contact-card">
+      <p>Have a question not answered above, found a bug, or want to suggest a new document standard? Send us an email and we'll get back to you.</p>
+      <a href="mailto:caixl@live.com">Email Support</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    Official Photo Maker &nbsp;·&nbsp;
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    © 2026 OffiPhoto
+  </p>
+</footer>
+
+</body>
+</html>
